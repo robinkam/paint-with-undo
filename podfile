@@ -1,0 +1,3 @@
+pod 'MBProgressHUD', '~> 0.9'
+pod 'Toast', '~> 2.4'
+pod 'PebbleKit', '~> 2.4'

@@ -1,0 +1,16 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - PebbleKit (2.4)
+  - Toast (2.4)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.9)
+  - PebbleKit (~> 2.4)
+  - Toast (~> 2.4)
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  PebbleKit: e8650801927bd7272da83c8a21fb94d2af24465b
+  Toast: 0773b8fc0e97352ca6054517bec7ebdd4110029d
+
+COCOAPODS: 0.37.1

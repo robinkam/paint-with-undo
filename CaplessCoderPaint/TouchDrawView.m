@@ -36,6 +36,7 @@
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
     if (_shouldClear) {
+        linesCompleted = [[NSMutableArray alloc] init];
         _shouldClear = NO;
         return;
     }
