@@ -81,6 +81,10 @@
     selector0.layer.borderWidth = 0.0f;
 }
 
+- (IBAction)clear:(id)sender {
+    [drewArea clear];
+}
+
 - (IBAction)undo:(id)sender
 {
     [drewArea undo];

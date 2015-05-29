@@ -12,6 +12,7 @@
 @implementation TouchDrawView
 {
     BOOL _isEraser;
+    BOOL _shouldClear;
 }
 @synthesize currentLine;
 @synthesize linesCompleted;
@@ -34,7 +35,10 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
+    if (_shouldClear) {
+        _shouldClear = NO;
+        return;
+    }
     CGContextSetLineWidth(context, 5.0);
     CGContextSetLineCap(context, kCGLineCapRound);
     for (Line *line in linesCompleted) {
@@ -43,6 +47,11 @@
         CGContextAddLineToPoint(context, [line end].x, [line end].y);
         CGContextStrokePath(context);
     }
+}
+
+- (void)clear{
+    _shouldClear = YES;
+    [self setNeedsDisplay];
 }
 
 - (void)undo

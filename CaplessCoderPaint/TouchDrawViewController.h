@@ -31,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *undoButton;
 @property (weak, nonatomic) IBOutlet UIButton *redoButton;
 
+- (IBAction)clear:(id)sender;
 - (IBAction)undo:(id)sender;
 - (IBAction)redo:(id)sender;
 

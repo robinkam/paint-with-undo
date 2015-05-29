@@ -17,6 +17,7 @@
 @property (nonatomic) NSMutableArray *linesCompleted;
 @property (nonatomic) UIColor *drawColor;
 
+- (void)clear;
 - (void)undo;
 - (void)redo;
 @end
